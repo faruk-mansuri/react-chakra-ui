@@ -15,10 +15,11 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { useLoaderData } from 'react-router-dom';
+import data from '../../data/db.json';
 
 export const loader = async () => {
   try {
-    const response = await fetch('http://localhost:3000/tasks');
+    const response = data;
     return response;
   } catch (error) {
     console.log(error);
