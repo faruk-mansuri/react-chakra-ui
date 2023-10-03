@@ -1,0 +1,82 @@
+import { Container, Heading, Text, Box } from '@chakra-ui/react';
+
+export default function Dashboard() {
+const boxStyles = {
+bg: 'purple.400',
+p: '10px',
+color: 'white',
+m: '10px',
+textAlign: 'center',
+filter: 'blur(1px)',
+':hover': { bg: 'purple', color: 'black' },
+};
+return (
+<Container as='section' maxW='4xl' bg='green' py='3rem'>
+<Heading p='10px'>Chakra UI Components</Heading>
+<Text ml='10px' color='blue.300' fontWeight='bold'>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quis?
+</Text>
+
+      <Box my='30px' p='20px' bg='orange'>
+        <Text color='white'>This is a box</Text>
+      </Box>
+
+      <Box sx={boxStyles}>Hello Jack</Box>
+    </Container>
+
+);
+}
+
+// **\***
+// FLEX BASICS
+// **\***
+<Flex bg='grey.200' justifyContent='space-between' wrap='wrap' gap='2'>
+<Box w='150px' h='50px' bg='red.300'>
+1
+</Box>
+<Box w='150px' h='50px' bg='blue.100'>
+2
+</Box>
+<Box w='150px' h='50px' bg='purple.100' flexGrow='1'>
+3
+</Box>
+<Box w='150px' h='50px' bg='yellow.100' flexGrow='2'>
+4
+</Box>
+</Flex>
+
+<!-- NAVBAR -->
+
+import {
+Flex,
+Box,
+Heading,
+Text,
+Button,
+Spacer,
+HStack,
+} from '@chakra-ui/react';
+
+const Navbar = () => {
+return (
+<Flex as='nav' p='1rem' alignItems='center' gap='10px'>
+<Heading as='h1'>Dojo Tasks</Heading>
+<Spacer />
+
+      <HStack spacing='20px'>
+        <Box bg='pink.200' p='10px'>
+          M
+        </Box>
+        <Text>peter@gmail.com</Text>
+        <Button colorScheme='blue'>Logout</Button>
+      </HStack>
+    </Flex>
+
+);
+};
+
+export default Navbar;
+
+<!-- ***** -->
+<!-- GRID -->
+<!-- ***** -->
