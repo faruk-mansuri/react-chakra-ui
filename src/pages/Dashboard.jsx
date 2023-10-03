@@ -20,7 +20,7 @@ import data from '../../data/db.json';
 export const loader = async () => {
   try {
     const response = data;
-    return response;
+    return response.tasks;
   } catch (error) {
     console.log(error);
     return null;
